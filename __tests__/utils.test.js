@@ -8,21 +8,18 @@ describe('getName returns the name property of an object', () =>  {
       age: 5,
       weight: '20 lbs'
     };
-    
-    const nameStr = getName(spot);
 
-    expect(nameStr).toEqual('spot');
+    expect(getName(spot)).toEqual('spot');
   });
-  it('spot object returns spot', () => {
+
+  it('chracter object returns Aang', () => {
 
     const character = { 
       _id: '5cf5679a915ecad153ab68c9',
       name: 'Aang' 
     };
-    
-    const nameStr = getName(character);
 
-    expect(nameStr).toEqual('Aang');
+    expect(getName(character)).toEqual('Aang');
   });
 });
 
