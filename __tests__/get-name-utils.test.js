@@ -1,4 +1,4 @@
-const getName = require('../src/utils.js');
+const getName = require('../src/get-name-utils.js');
 
 describe('getName returns the name property of an object', () =>  {
   it('spot object returns spot', () => {
