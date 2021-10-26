@@ -15,6 +15,5 @@ describe('copyAndPush returns a new array with all items in array plus one item'
     
     expect (initNumArr).toEqual([1, 2, 3]);
   });
-
 });
 
