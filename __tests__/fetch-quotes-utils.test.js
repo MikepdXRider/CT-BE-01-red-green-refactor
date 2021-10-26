@@ -8,7 +8,7 @@ describe('fetchQuotes function returns an object containing name, quote, and ima
   it('fetchQuotes returns expected object format.', async () => {
     
 
-    // This was really hard and confusing. When we're learning new things it's hard to remember and trust fundamental knowledge because we aren't confident in the new environment or how it's variables might affect our existing truths.
+    // This was really hard and confusing. When we're learning new things it's hard to remember and trust fundamental knowledge because I'm not confident in the new environment or how it's different variables might affect my existing truths.
     // Our fetch response must be an object with a json method. 
     // This is a fact because in fetchQuotes() `response.json()` implies that response is an object, and json() is a method. Thus, when we are mocking fetch, we must mock this method. Huge shoutout to Erich for helping me see this!
     const mockResponse = {
