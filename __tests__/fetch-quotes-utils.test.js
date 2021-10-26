@@ -1,11 +1,16 @@
+const fetchQuotes = require('../src/fetch-quotes-utls.js');
+
+
 describe('fetchQuotes function returns a an object containing name, quote, and image properties from an api.', () =>  {
   it('fetchQuotes returns expected object format.', () => {
-    const newQuoteObj = {
-      name: 'Fry',
-      quote: 'What would Ted Lasso do?',
-      img: 'https://res.cloudinary.com/dzxqhkyqd/image/upload/v1554904133/fry.png'
+    const expectedObj = {
+      name: expect.any(String),
+      quote: expect.any(String),
+      img: expect.any(String)
     };
+
+    const actualObj = fetchQuotes();
   
-    expect(newQuoteObj).toEqual({});
+    expect(actualObj).toEqual(expectedObj);
   });
 });
