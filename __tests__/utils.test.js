@@ -1,7 +1,7 @@
 const getName = require('../src/utils.js');
 
-describe('Red, Green, Refactor Lab', () =>  {
-  it('getName returns the name property of an object', () => {
+describe('getName returns the name property of an object', () =>  {
+  it('spot object returns spot', () => {
 
     const spot = {
       name: 'spot',
@@ -12,6 +12,17 @@ describe('Red, Green, Refactor Lab', () =>  {
     const nameStr = getName(spot);
 
     expect(nameStr).toEqual('spot');
+  });
+  it('spot object returns spot', () => {
+
+    const character = { 
+      _id: '5cf5679a915ecad153ab68c9',
+      name: 'Aang' 
+    };
+    
+    const nameStr = getName(character);
+
+    expect(nameStr).toEqual('Aang');
   });
 });
 
